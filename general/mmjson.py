@@ -49,11 +49,11 @@ def denumpy(d, deepcopy=False):
             d[i] = float(d[i])
     return d
 
-def open(file_dir):
+def open_json(file_dir):
     with open(file_dir) as file:  
         data = json.load(file)
     return data
 
-def save(dictionary, file_dir):
+def save_json(dictionary, file_dir):
     with open(file_dir, 'w') as file:  
         json.dump(dictionary, file)

@@ -1,1 +1,1 @@
-from . import getsegments
+from . import segments
