@@ -40,10 +40,7 @@ def resample_DF(df, freq="1H", window=7):
     return df
 
 def linreg(df, tagX, tagY, **kwargs):
-    """Resample, interpolate and smoothen with savgol_filtering
-
-    Interpolation using splines does not work well with pandas DataFrames and 
-    produces inconsistent data. This 
+    """Quick linear regression model.
 
     Parameters
     ----------
@@ -59,7 +56,7 @@ def linreg(df, tagX, tagY, **kwargs):
     -------
     sklearn.linear_model._base.LinearRegression
     """
-    linear_regression = LinearRegression()
+    linear_regression = LinearRegression(**kwargs)
     
     X = df[tagX].values.reshape(-1, 1)
     Y = df[tagY].values.reshape(-1, 1)
