@@ -5,7 +5,7 @@ Created on Fri Apr  9 16:38:08 2021
 @author: mohanam
 """
 
-import mysql.connector
+import mysql.connector #pip install mysql-connector-python
 import pandas as pd
 
 
