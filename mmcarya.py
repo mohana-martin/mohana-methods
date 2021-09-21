@@ -38,7 +38,7 @@ def importLog(fileDir, units = False):
                             delimiter="\t", 
                             index_col=0, 
                             parse_dates=True, 
-                            error_bad_lines=False, 
+                            on_bad_lines="warn", 
                             encoding = "ISO-8859-15")
     # Convert it into a datetime object in order to be able to select data out
     # and make plotly x axis
