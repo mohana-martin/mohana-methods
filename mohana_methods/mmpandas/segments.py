@@ -70,8 +70,8 @@ def get_delayed_segments(segments, delay) -> list:
         List of dictionary with two keys "start" and "end", whose values correspond to the index of the Pandas Series.
     delay : dict
         a dictionary with two keys: "end" and "start", containing a dictionary with the input
-        arguments to dt.timedelta method or simply int or floats.
-         e.g. {"start":{"minutes":30},"end":{"seconds":-5}} or {"start":30 ,"end":-5}}
+        arguments to dt.timedelta method.
+         e.g. {"start":{"minutes":30},"end":{"seconds":-5}}
 
     Returns
     -------
