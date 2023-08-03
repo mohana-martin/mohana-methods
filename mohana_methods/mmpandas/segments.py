@@ -3,7 +3,7 @@ import datetime as dt
 from copy import deepcopy
 
 
-def get_segments(filter_series, complete=True):
+def get_segments(filter_series, complete=True) -> list:
     """Get the start and end index of consecutive True's in a Pandas Series.
 
     Parameters
@@ -54,7 +54,7 @@ def get_segments(filter_series, complete=True):
     return retlist
 
 
-def get_delayed_segments(segments, delay):
+def get_delayed_segments(segments, delay) -> list:
     """Get the delayed start and end segments.
     
     This function takes a list of segments and checks whether their length is
